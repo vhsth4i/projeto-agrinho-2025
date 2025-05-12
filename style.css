@@ -1,0 +1,242 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2e7d32; /* Verde escuro, cor primária */
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+a {
+    color: #1976d2; /* Azul, cor secundária para links */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* Container Principal */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    background-color: #81c784; /* Verde claro para o cabeçalho */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+/* Seções */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #81c784;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+/* Lista de Produtores */
+.produtores-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 1em;
+}
+
+.produtor {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.produtor h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    color: #388e3c;
+}
+
+.produtor p {
+    margin-bottom: 0.5em;
+}
+
+.produtor a {
+    display: inline-block;
+    background-color: #66bb6a;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.produtor a:hover, .produtor a:focus {
+    background-color: #388e3c;
+}
+
+/* Lista de Produtos */
+#produtos ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#produtos li {
+    margin-bottom: 0.5em;
+}
+
+/* Informações Práticas */
+#informacoes ul {
+    list-style: none;
+    padding: 0;
+}
+
+#informacoes li {
+    margin-bottom: 0.8em;
+}
+
+#informacoes strong {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Contato */
+#contato p {
+    margin-bottom: 1em;
+}
+
+#contato a {
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+/* Estilos para Acessibilidade */
+
+/* Evitar o uso de outline: none; e fornecer um estilo de foco visível */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #ffeb3b; /* Amarelo para foco */
+    outline-offset: 2px;
+}
+
+/* Garantir contraste de cor suficiente para texto */
+body {
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, p, li, a {
+    /* Verificar contraste com a cor de fundo pai */
+}
+
+/* Links visíveis */
+a {
+    text-decoration: underline; /* Inicialmente sublinhado para melhor visibilidade */
+}
+
+a:hover, a:focus {
+    text-decoration: none; /* Remover sublinhado no hover/foco para indicar interação */
+}
+
+/* Botões e elementos interativos */
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: #66bb6a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+    background-color: #388e3c;
+}
+
+/* Imagens responsivas (boa prática para acessibilidade e usabilidade) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Textos alternativos para imagens (devem ser definidos no HTML) */
+/* Exemplo no HTML: <img src="produto.jpg" alt="Descrição detalhada do produto"> */
+
+/* Uso de unidades relativas (em, rem) para tamanhos de fonte para permitir zoom do usuário */
+body {
+    font-size: 16px; /* Tamanho base */
+}
+
+h1 {
+    font-size: 2.5em; /* Relativo ao tamanho base do body */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p, li {
+    font-size: 1em;
+}
+
+/* Estrutura semântica no HTML (usar <article>, <nav>, <aside> etc.) */
+/* Isso ajuda os leitores de tela a entender a estrutura do conteúdo */
+
+/* ARIA roles (usar com moderação quando o HTML semântico não for suficiente) */
+/* Exemplo no HTML: <nav role="navigation"> */
+
+/* Contraste de cor (ferramentas online podem ajudar a verificar) */
+/* As cores escolhidas (#333 e #f4f4f4, #2e7d32 e #fff, #1976d2 e #fff, #81c784 e #fff, #66bb6a e #fff)
+   geralmente possuem bom contraste, mas é importante verificar com ferramentas de acessibilidade. */
