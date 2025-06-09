@@ -67,6 +67,15 @@ ul li:before {
     color: #54C571; /* Verde esmeralda para o ícone */
 }
 
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
 /* Rodapé */
 footer {
@@ -91,42 +100,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-
-
-img {
-  max-width: 100%;
-  height: auto;    
-  display: block;  
-  margin-bottom: 20px
-}
-
-
-
-
-img:last-child {
-  margin-bottom: 0;
-}
-
-
-
-.container-de-imagem {
-  text-align: center;
-}
-
-.container-de-imagem img {
-  margin: 0 auto; 
-}
-
-
-.imagem-pequena {
-  max-width: 300px; 
-}
-
-
-
-.imagem-50-porcento {
-  width: 50%; 
-  height: auto;
 }
