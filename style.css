@@ -68,6 +68,33 @@ ul li:before {
 }
 
 
+/* Rodapé */
+footer {
+    background-color: #2E8B57; /* Verde mar */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #E0FFE0; /* Um verde bem clarinho para o texto do rodapé */
+}
+
+/* Estilos para o link (se você adicionar um link no futuro) */
+a {
+    color: #006400; /* Verde escuro para links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
 img {
   max-width: 100%;
   height: auto;    
@@ -102,29 +129,4 @@ img:last-child {
 .imagem-50-porcento {
   width: 50%; 
   height: auto;
-}
-
-/* Rodapé */
-footer {
-    background-color: #2E8B57; /* Verde mar */
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 5px 0;
-    color: #E0FFE0; /* Um verde bem clarinho para o texto do rodapé */
-}
-
-/* Estilos para o link (se você adicionar um link no futuro) */
-a {
-    color: #006400; /* Verde escuro para links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
