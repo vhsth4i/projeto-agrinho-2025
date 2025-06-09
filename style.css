@@ -1,242 +1,103 @@
 /* Estilos Gerais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    line-height: 1.6;
+    color: #333; /* Cor de texto padrão */
+    background-color: #F0F8F0; /* Um verde bem clarinho para o fundo */
 }
 
-h1, h2, h3 {
-    color: #326825; /* Verde escuro, cor primária */
-    margin-bottom: 0.5em;
-    line-height: 1.2;
-}
-
-a {
-    color: #1976d2; /* Azul, cor secundária para links */
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    text-decoration: underline;
-}
-
-/* Container Principal */
-main {
+.container {
     max-width: 960px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #228B22; /* Verde floresta */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #90EE90; /* Verde claro para o título */
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #D3FFD3; /* Um verde ainda mais claro para o parágrafo */
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho */
-header {
-    background-color: #81c784; /* Verde claro para o cabeçalho */
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px 8px 0 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-top: 0;
-    font-size: 3.0em;
-}
-
-header p {
-    font-size: 1.1em;
-    margin-bottom: 0;
-}
-
-/* Seções */
-section {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-}
-
-section:last-child {
-    border-bottom: none;
-}
-
 section h2 {
-    font-size: 2em;
-    margin-top: 0;
-    border-bottom: 2px solid #81c784;
-    padding-bottom: 0.3em;
-    margin-bottom: 1em;
+    color: #3CB371; /* Verde menta para os títulos das seções */
+    border-bottom: 2px solid #66CDAA; /* Verde água-marinha para a linha abaixo do título */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-/* Lista de Produtores */
-.produtores-lista {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 1em;
-}
-
-.produtor {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-}
-
-.produtor h3 {
-    font-size: 1.3em;
-    margin-top: 0;
-    color: #388e3c;
-}
-
-.produtor p {
-    margin-bottom: 0.5em;
-}
-
-.produtor a {
-    display: inline-block;
-    background-color: #66bb6a;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.produtor a:hover, .produtor a:focus {
-    background-color: #2e7a7d;
-}
-
-/* Lista de Produtos */
-#produtos ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-#produtos li {
-    margin-bottom: 0.5em;
-}
-
-/* Informações Práticas */
-#informacoes ul {
-    list-style: none;
+/* Listas */
+ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
     padding: 0;
 }
 
-#informacoes li {
-    margin-bottom: 0.8em;
+ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
 }
 
-#informacoes strong {
-    font-weight: bold;
-    color: #2e7d32;
+ul li:before {
+    content: '🌿'; /* Ícone de folha para os itens da lista */
+    position: absolute;
+    left: 0;
+    color: #54C571; /* Verde esmeralda para o ícone */
 }
 
-/* Contato */
-#contato p {
-    margin-bottom: 1em;
-}
-
-#contato a {
-    font-weight: bold;
+/* Imagens */
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #2E8B57; /* Verde mar */
     color: #fff;
     text-align: center;
-    padding: 15px 0;
-    border-radius: 0 0 8px 8px;
+    padding: 1rem 0;
     margin-top: 20px;
+    font-size: 0.9rem;
 }
 
-/* Estilos para Acessibilidade */
-
-/* Evitar o uso de outline: none; e fornecer um estilo de foco visível */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-    outline: 2px solid #ffeb3b; /* Amarelo para foco */
-    outline-offset: 2px;
+footer p {
+    margin: 5px 0;
+    color: #E0FFE0; /* Um verde bem clarinho para o texto do rodapé */
 }
 
-/* Garantir contraste de cor suficiente para texto */
-body {
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-h1, h2, h3, p, li, a {
-    /* Verificar contraste com a cor de fundo pai */
-}
-
-/* Links visíveis */
+/* Estilos para o link (se você adicionar um link no futuro) */
 a {
-    text-decoration: underline; /* Inicialmente sublinhado para melhor visibilidade */
+    color: #006400; /* Verde escuro para links */
+    text-decoration: none;
 }
 
-a:hover, a:focus {
-    text-decoration: none; /* Remover sublinhado no hover/foco para indicar interação */
+a:hover {
+    text-decoration: underline;
 }
-
-/* Botões e elementos interativos */
-button,
-input[type="submit"],
-input[type="button"] {
-    background-color: #66bb6a;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover,
-button:focus,
-input[type="submit"]:focus,
-input[type="button"]:focus {
-    background-color: #388e3c;
-}
-
-/* Imagens responsivas (boa prática para acessibilidade e usabilidade) */
-img {
-    max-width: 80%;
-    height: auto;
-}
-
-/* Textos alternativos para imagens (devem ser definidos no HTML) */
-/* Exemplo no HTML: <img src="produto.jpg" alt="Descrição detalhada do produto"> */
-
-/* Uso de unidades relativas (em, rem) para tamanhos de fonte para permitir zoom do usuário */
-body {
-    font-size: 16px; /* Tamanho base */
-}
-
-h1 {
-    font-size: 2.5em; /* Relativo ao tamanho base do body */
-}
-
-h2 {
-    font-size: 2em;
-}
-
-p, li {
-    font-size: 1em;
-}
-
-/* Estrutura semântica no HTML (usar <article>, <nav>, <aside> etc.) */
-/* Isso ajuda os leitores de tela a entender a estrutura do conteúdo */
-
-/* ARIA roles (usar com moderação quando o HTML semântico não for suficiente) */
-/* Exemplo no HTML: <nav role="navigation"> */
-
-/* Contraste de cor (ferramentas online podem ajudar a verificar) */
-/* As cores escolhidas (#333 e #f4f4f4, #2e7d32 e #fff, #1976d2 e #fff, #81c784 e #fff, #66bb6a e #fff)
-   geralmente possuem bom contraste, mas é importante verificar com ferramentas de acessibilidade. */
