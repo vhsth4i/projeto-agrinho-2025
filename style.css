@@ -7,6 +7,7 @@ body {
     background-color: #F0F8F0; /* Um verde bem clarinho para o fundo */
 }
 
+/* Centraliza o conteúdo principal na página */
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -32,7 +33,7 @@ header p {
     color: #D3FFD3; /* Um verde ainda mais claro para o parágrafo */
 }
 
-/* Seções */
+/* Seções da página */
 section {
     padding: 20px;
     margin-bottom: 20px;
@@ -67,12 +68,12 @@ ul li:before {
     color: #54C571; /* Verde esmeralda para o ícone */
 }
 
-/* Imagens */
+/* Imagens - Ajustadas para serem menores e com mais espaçamento */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+    max-width: 60%; /* Define o tamanho máximo da imagem para 60% da largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem para evitar distorções */
+    display: block; /* Garante que a imagem se comporte como um bloco para o margin: auto funcionar */
+    margin: 30px auto; /* Adiciona 30px de espaçamento acima e abaixo, e centraliza horizontalmente */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -92,12 +93,12 @@ footer p {
     color: #E0FFE0; /* Um verde bem clarinho para o texto do rodapé */
 }
 
-/* Estilos para o link (se você adicionar um link no futuro) */
+/* Estilos para links */
 a {
     color: #006400; /* Verde escuro para links */
-    text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
