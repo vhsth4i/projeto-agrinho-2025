@@ -1,104 +1,184 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&displ
+ay=swap');
 /* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #333; /* Cor de texto padrão */
-    background-color: #F0F8F0; /* Um verde bem clarinho para o fundo */
+ font-family: 'Roboto', Arial, sans-serif; /* Usando Roboto como
+fonte principal */
+ margin: 0;
+ line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor
+leitura */
+ color: #333; /* Cor de texto padrão */
+ background-color: #F0F8F0; /* Um verde bem clarinho para o fundo */
+ font-size: 1.15rem; /* Tamanho da fonte base para o corpo do texto -
+AUMENTADO */
 }
-
 /* Centraliza o conteúdo principal na página */
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 20px;
 }
-
 /* Cabeçalho */
 header {
-    background-color: #228B22; /* Verde floresta */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+ background-color: #228B22; /* Verde floresta */
+ color: #fff;
+ padding: 2rem 0; /* Aumenta o padding para mais espaço no cabeçalho
+*/
+ text-align: center;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra no cabeçalho
+para destaque */
 }
-
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #90EE90; /* Verde claro para o título */
+ margin: 0;
+ font-size: 3.5rem; /* Título principal ainda maior */
+ color: #90EE90; /* Verde claro para o título */
+ text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Adiciona uma sombra
+para destaque */
 }
-
 header p {
-    font-size: 1.1rem;
-    color: #D3FFD3; /* Um verde ainda mais claro para o parágrafo */
+ font-size: 1.4rem; /* Parágrafo no cabeçalho maior */
+ color: #D3FFD3; /* Um verde ainda mais claro para o parágrafo */
+ margin-top: 10px;
 }
-
 /* Seções da página */
 section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ padding: 30px; /* Aumenta o padding das seções para mais "respiro"
+*/
+ margin-bottom: 30px; /* Aumenta o espaçamento entre as seções */
+ background-color: #fff;
+ border-radius: 10px; /* Borda um pouco mais arredondada */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
 }
-
 section h2 {
-    color: #3CB371; /* Verde menta para os títulos das seções */
-    border-bottom: 2px solid #66CDAA; /* Verde água-marinha para a linha abaixo do título */
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+ color: #3CB371; /* Verde menta para os títulos das seções */
+ border-bottom: 3px solid #66CDAA; /* Linha abaixo do título mais
+espessa */
+ padding-bottom: 15px; /* Mais espaço abaixo do título */
+ margin-bottom: 25px; /* Mais espaço abaixo do título para o texto */
+ font-size: 2.2rem; /* Títulos de seção maiores */
 }
-
+/* Parágrafos dentro das seções */
+section p {
+ font-size: 1.15rem; /* Garante que os parágrafos dentro das seções
+tenham um bom tamanho */
+ margin-bottom: 15px; /* Adiciona um pouco de espaço abaixo dos
+parágrafos */
+ text-align: justify; /* Texto justificado */
+}
 /* Listas */
 ul {
-    list-style-type: none; /* Remove os marcadores padrão da lista */
-    padding: 0;
+ list-style-type: none; /* Remove os marcadores padrão da lista */
+ padding: 0;
 }
-
 ul li {
-    margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
+ margin-bottom: 15px; /* Aumenta o espaçamento entre os itens da
+lista */
+ padding-left: 35px; /* Aumenta o padding para o ícone */
+ position: relative;
+ font-size: 1.15rem; /* Itens da lista com fonte maior */
+ text-align: justify; /* Texto justificado */
 }
-
+ul li strong {
+ color: #2E8B57; /* Destaca os itens fortes nas listas */
+}
 ul li:before {
-    content: '🌿'; /* Ícone de folha para os itens da lista */
-    position: absolute;
-    left: 0;
-    color: #54C571; /* Verde esmeralda para o ícone */
+ content: '🌿'; /* Ícone de folha para os itens da lista */
+ position: absolute;
+ left: 0;
+ color: #54C571; /* Verde esmeralda para o ícone */
+ font-size: 1.4rem; /* Aumenta o tamanho do ícone */
+ top: 0; /* Alinha o ícone com o topo do texto */
 }
-
-/* Imagens - Ajustadas para serem menores e com mais espaçamento */
-img {
-    max-width: 60%; /* Define o tamanho máximo da imagem para 60% da largura do seu contêiner */
-    height: auto; /* Mantém a proporção da imagem para evitar distorções */
-    display: block; /* Garante que a imagem se comporte como um bloco para o margin: auto funcionar */
-    margin: 30px auto; /* Adiciona 30px de espaçamento acima e abaixo, e centraliza horizontalmente */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+/* Galeria de Imagens - para ficarem lado a lado e responsivas */
+.gallery {
+ display: flex; /* Habilita o Flexbox */
+ flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima
+linha em telas menores */
+ justify-content: center; /* Centraliza as imagens horizontalmente */
+ gap: 25px; /* Espaço maior entre as imagens */
+ margin-top: 35px; /* Mais espaço acima da galeria */
 }
-
+.gallery img {
+ flex-grow: 1; /* Permite que as imagens cresçam para preencher o
+espaço */
+ flex-shrink: 1; /* Permite que as imagens encolham */
+ flex-basis: 45%; /* Define uma largura base de 45% para que caibam
+duas por linha (considerando o gap) */
+ max-width: 45%; /* Garante que não fiquem muito grandes */
+ height: 250px; /* Altura fixa para as imagens para uniformidade */
+ object-fit: cover; /* Recorta a imagem para preencher o espaço sem
+distorcer */
+ border-radius: 10px; /* Borda arredondada para as imagens */
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais
+pronunciada nas imagens */
+ transition: transform 0.3s ease-in-out; /* Efeito suave ao passar o
+mouse */
+}
+.gallery img:hover {
+ transform: scale(1.03); /* Leve aumento ao passar o mouse para um
+efeito interativo */
+}
 /* Rodapé */
 footer {
-    background-color: #2E8B57; /* Verde mar */
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
-    font-size: 0.9rem;
+ background-color: #2E8B57; /* Verde mar */
+ color: #fff;
+ text-align: center;
+ padding: 1.5rem 0; /* Aumenta o padding do rodapé */
+ margin-top: 30px; /* Mais espaço acima do rodapé */
+ font-size: 1rem; /* Texto do rodapé maior */
+ box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra no rodapé */
 }
-
 footer p {
-    margin: 5px 0;
-    color: #E0FFE0; /* Um verde bem clarinho para o texto do rodapé */
+ margin: 7px 0; /* Mais espaço entre os parágrafos do rodapé */
+ color: #E0FFE0; /* Um verde bem clarinho para o texto do rodapé */
 }
-
 /* Estilos para links */
 a {
-    color: #006400; /* Verde escuro para links */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
+ color: #006400; /* Verde escuro para links */
+ text-decoration: none;
+ transition: color 0.3s ease; /* Transição suave para a cor do link
+*/
 }
-
 a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+ text-decoration: underline;
+ color: #004d00; /* Cor mais escura ao passar o mouse */
+}
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+ body {
+ font-size: 1rem; /* Reduz a fonte base em telas menores para
+melhor adaptação */
+ }
+ header h1 {
+ font-size: 2.8rem;
+ }
+ header p {
+ font-size: 1.2rem;
+ }
+ section h2 {
+ font-size: 1.8rem;
+ }
+ .gallery img {
+ flex-basis: 100%; /* Em telas menores, as imagens ocupam a
+largura total */
+ max-width: 100%;
+ height: 200px; /* Ajusta a altura da imagem para telas menores
+*/
+ }
+}
+@media (max-width: 480px) {
+ header h1 {
+ font-size: 2.2rem;
+ }
+header p {
+ font-size: 1rem;
+ }
+ section {
+ padding: 20px;
+ }
+ section h2 {
+ font-size: 1.5rem;
+ }
 }
